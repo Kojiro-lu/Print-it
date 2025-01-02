@@ -50,7 +50,7 @@ const createDots = () => {
     const dot = document.createElement("div");
     dot.classList.add("dot");
     if (index === 0) {
-      dot.classList.add("dot_selected"); // Le premier point est actif
+      dot.classList.add("dot_selected"); // Premier point est actif
     }
     dotsContainer.appendChild(dot);
   });
@@ -101,14 +101,3 @@ arrowRight.addEventListener("click", goNextImage);
 
 // Mise à jour initiale de la slide
 updateSlide(currentIndex);
-
-/*const navigateTo = (direction) => {
-  if (direction === "next") {
-    console.log("going to next image");
-  } else if (direction === "previous") {
-    console.log("going to previous image");
-  } else console.log("going nowhere");
-};
-
-arrowLeft.addEventListener("click", () => navigateTo("previous"));
-arrowRight.addEventListener("click", () => navigateTo("next"));*/
